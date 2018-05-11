@@ -8,7 +8,11 @@ Author URI: http://www.tommyruski.com
 Template: brooklyn
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700|Roboto+Condensed:300,400|Roboto:300,400,500,700,900");
-.page-id-413 header {
+.nomarpad, .album-art-section a, .album-art-section p, .free-dl-hero .wpb_text_column p {
+  margin: 0;
+  padding: 0; }
+
+.page-id-413, .page-id-513 header {
   display: none; }
 
 .fineprint {
@@ -37,23 +41,15 @@ Template: brooklyn
   background: rgba(0, 0, 0, 0.5);
   padding: 10px; }
 
-.album-art-section a {
-  padding: 0;
-  margin: 0; }
-
-.album-art-section p {
-  padding: 0;
-  margin: 0; }
-
-.album-art-section .album-title {
+.album-title {
   text-align: center;
   color: white;
   font-size: 20px;
   background: #202020;
   padding: 10px; }
 
-.album-art-section .get-full-album a {
-  color: white;
+.get-full-album a {
+  color: white !important;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -63,16 +59,19 @@ Template: brooklyn
   padding: 10px;
   border-radius: 0 0 8px 8px;
   display: block;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all .5s; }
-  .album-art-section .get-full-album a img {
+  .get-full-album a img {
     position: relative;
     top: -6px;
     left: -5px; }
 
-.album-art-section .get-full-album a:hover {
+.get-full-album a:hover {
   background: rgba(142, 69, 165, 0.5);
-  color: white; }
+  color: white !important; }
+
+.who-is-nukage-text {
+  font-size: 18px; }
 
 #track-list-1 {
   color: white; }
@@ -154,3 +153,10 @@ Template: brooklyn
   font-family: "Roboto Condensed"; }
   .features .line-3 strong {
     color: #DE0000; }
+
+.free-dl-hero .wpb_text_column {
+  max-width: 600px;
+  margin: auto; }
+
+.cp_id_18c7a {
+  background: blue; }

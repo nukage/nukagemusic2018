@@ -9,14 +9,12 @@ Template: brooklyn
 */
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700|Roboto+Condensed:300,400|Roboto:300,400,500,700,900');
 
-.page-id-413 header {
+.nomarpad{
+	margin:0;padding:0;
+}
+
+.page-id-413, .page-id-513 header {
 	display:none;
-
-
-	.purple-stripe{
-		
-	}
-
 }
 
 	.fineprint{
@@ -46,14 +44,7 @@ Template: brooklyn
 	padding:10px;
 }
 
-
-.album-art-section{
-	a{
-	padding:0;margin:0;
-}
-	
-	p{padding:0;margin:0;}
-	.album-title  {
+.album-title  {
 		text-align:center;
 		color:white;
 		font-size:20px;
@@ -62,8 +53,9 @@ Template: brooklyn
 
 
 }
+
 .get-full-album a {
-		color:white;
+		color:white !important;
 		text-align:center;
 		text-transform:uppercase;
 		letter-spacing:3px;
@@ -73,7 +65,7 @@ Template: brooklyn
 		padding:10px;
 		border-radius: 0 0 8px 8px;
 		display:block;
-		text-decoration:none;
+		text-decoration:none !important;
 		transition: all .5s;
 		img{
 			position:relative;
@@ -87,9 +79,24 @@ Template: brooklyn
 	.get-full-album a:hover{
 		 
 		background:rgba(142, 69, 165, .5);
-		color:white;
+		color:white !important;
 	}
+
+.album-art-section{
+	a{
+	 @extend .nomarpad
 }
+	
+	p{ @extend .nomarpad}
+	
+
+}
+
+.who-is-nukage-text {
+	font-size:18px;
+}
+
+
 	#track-list-1{
 		color:white;
 		a{
@@ -214,10 +221,20 @@ Template: brooklyn
 	}	
 }
 
+.free-dl-hero {
+	.wpb_text_column {
+		max-width:600px;
+		margin:auto;
+		p{
+			 @extend .nomarpad 
+		}
+	}
+}
 
 
 
-
-
+.cp_id_18c7a{
+	background:blue;
+}
 
 
