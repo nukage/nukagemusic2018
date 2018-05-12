@@ -12,6 +12,9 @@ Template: brooklyn
   margin: 0;
   padding: 0; }
 
+.whitetxt {
+  color: white; }
+
 .page-id-413, .page-id-513 header {
   display: none; }
 
